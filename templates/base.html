@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/inicio.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/Footer.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/Responsive.css')}}">
+    {% block head %}
+    {% endblock %}
+
+</head>
+<body>
+    <!-- debajo de la navbar -->
+    {% block body %}
+    {% endblock%}
+   
+    <!-- Inicio de sección de contacto y Redes Sociales -->
+    <main>
+        <div class="Contacto">
+            <div class="Columna">
+                <div class="ContactoEnlace">
+                    <a href="#">Contactanos</a>
+                </div>                
+                <div class="RedesSociales">
+                    <a href="https://www.instagram.com/kerbalspacep/"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://twitter.com/KerbalSpaceP"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://www.facebook.com/kerbalspaceprogram"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="https://www.youtube.com/user/KerbalSPOfficial"><i class="fab fa-youtube"></i> Youtube</a>
+                    <a href="https://www.reddit.com/r/KerbalSpaceProgram/"><i class="fab fa-reddit"></i> Reddit</a>
+                    <a href="https://discord.com/invite/ZbMp7RjVhU"><i class="fab fa-discord"></i> Discord</a>
+                    <a href="https://www.twitch.tv/ksptv"><i class="fab fa-discord"></i> Twitch</a>
+                </div>
+            </div>
+            <img src="{{url_for('static', filename='SRC/Private Division.jpeg')}}" alt="Imagen de contacto" class="ImagenContacto">
+        </div>
+        <footer>
+            <div>
+                <p>&copy; #ArtInteractvie 2021 | All rights reserved</p>
+            </div>
+        </footer>
+    </main>
+        <!-- Fin de sección de contacto y Redes Sociales -->
+</body>
+</html>

@@ -1,0 +1,63 @@
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+}
+
+.Contacto {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.Columna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.ContactoEnlace a {
+    color: rgb(211, 211, 211);
+    font-family: arial rounded mt;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.RedesSociales a {
+    color: rgb(211, 211, 211);
+    font-family: arial rounded mt;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.RedesSociales a:hover {
+    color: #ff9900; /* Cambia el color al pasar el cursor */
+    font-size: 1.3rem; /* Aumenta el tamaño al pasar el cursor */
+}
+
+.ImagenContacto {
+    max-width: 100%;
+    height: auto;
+    width: 120px;
+}
+
+.ContactoEnlace{
+    padding: 15px;
+    margin-bottom: 5px;
+    
+}
+
+.RedesSociales a i {
+    margin-right: 30px;
+    font-size: 1.2rem;
+}

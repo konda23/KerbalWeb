@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+    background-color: #00070f;
+}
+
+body::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: #c91111;
+    border-radius: 5px;
+}
+:root{
+    --blanco: #ffffff;
+    --negro: #00070f;
+    --gris: #e4d8d8;
+    --rojo:#e72727d7;
+}
+.Inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../SRC/kerbals.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+.Inicio-cont{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    padding: 0 20px;
+    overflow-y: hidden;
+}
+
+.KSP{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+.KSP img{
+    display: flex;
+    width: 25em;
+    height: 10em;
+}
+
+.registro-ingreso{
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -100px;
+    height: 70%;
+    text-shadow: -1.5px -1.5px 0 black, 1.5px -1.5px 0 black, -1.5px 1.5px 0 black, 1.5px 1.5px 0 black;
+}
+
+.registro-ingreso h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 25%;
+    font-weight: bold;
+    text-shadow: -1.5px -1.5px 0 black, 1.5px -1.5px 0 black, -1.5px 1.5px 0 black, 1.5px 1.5px 0 black;
+}
+
+.registro-ingreso-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    bottom: -50px;
+}
+
+.registro-ingreso-btn a{ 
+    padding: 5px 15px 5px 15px;
+    font-size: 1.4em;
+    font-family: Arial;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 100px;
+    justify-content: center;
+    color: var(--blanco);
+    margin-left: 10px;
+    transition: .5;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border: 2px solid var(--blanco);
+
+}
+
+
+.btn {
+    padding: 5px 15px;
+    font-size: 1.4em;
+    font-family: Arial;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 100px;
+    justify-content: center;
+    color: var(--blanco);
+    margin-left: 10px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #c91111;
+}
+
+.registro-ingreso-btn a:hover {
+    background-color: #c91111;
+    border-color: #fff;
+}
+
+.registro-ingreso h1{
+    color: var(--gris);
+    font-size: 1.5rem;
+    width: fit-content;
+    margin-bottom: -100px;
+}
+
+.Planets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../SRC/cielo\ estrellado\ 2.png);
+    position: relative;
+}
+
+.cuadro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slot {
+    width: 100%;
+    margin: 0.1px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    background-color: #000000dc;
+}
+
+.slot img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.slot p {
+    flex: 1;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.btn {
+    padding: 5px 15px;
+    font-size: 1.4em;
+    font-family: Arial;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 100px;
+    justify-content: center;
+    color: var(--blanco);
+    margin-left: 10px;
+    transition: .5s;
+    cursor: pointer; 
+}
+
+.btn:hover {
+    background-color: #c91111;
+}
+
+.planet-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#121213c7;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.planet-button img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.planet-button p {
+    color: var(--blanco);
+    text-align: center;
+    font-size: 1.01rem;
+    line-height: 1.4;
+}
+
+.planet-button:hover {
+    background-color:#121213c7;
+    transform: scale(1.05);
+}

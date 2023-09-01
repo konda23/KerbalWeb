@@ -1,0 +1,203 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='CSS/Pag2.css')}}">
+{% endblock %}
+
+{% block body %}
+<section class="celestial-bodies">
+    <!-- Sección 1 -->
+    <div class="cuadro cuadro-1" id="kerbol">
+        <div class="slot">
+            <img src="{{url_for('static', filename='SRC/Kerbol.png')}}">
+            <p>Kerbol, también conocido como el Sol, es la estrella madre del Sistema Kerbol</p>
+        </div>
+        <div class="datos">
+            <p>Kerbol contiene el 99,97% de la masa en el sistema Kerbol. Esto es muy similar a nuestro sol, que contiene el 99,86% de la masa en el sistema solar del mundo real</p>
+            <hr>
+            <div>
+                <p> El radio ecuatorial del Sol es casi cuatro veces mayor que el de Júpiter y 43,6 veces más grande que el de Jool, el planeta más grande conocido en el sistema Solar</p>
+            </div>
+            <hr>
+            <div>
+                <p>La "corona" que rodea al Sol (Kerbol) no es del tamaño real del sol tal como aparece. Se reducirá y crecerá en relación con la ubicación del mirador, al igual que el tamaño de Kerbol lo hace normalmente. Sin embargo, no se encogerá más allá de cierto punto, y si el sol se ve desde un punto lo suficientemente lejos, la corona sigue siendo muy visible</p>
+            </div>
+            <div class="button-container">
+                <button id="backButton-1" class="toggleButton custom-button">Anterior</button>
+                <button id="nextButton-1" class="toggleButton custom-button">Siguiente</button>
+            </div>            
+        </div>
+    </div>
+    
+    <!-- Sección 2 -->
+    <div class="cuadro cuadro-2 hidden" id="moho">
+        <div class="slot">
+            <img src="{{url_for('static', filename='SRC/Moho.png')}}">
+            <p>Moho es el tercer planeta más pequeño y el planeta más cercano a Kerbol</p>
+        </div>
+        <div class="datos">
+            <!-- Contenido de datos aquí -->
+            <p>Moho tiene un período orbital de 102 días y una velocidad orbital que oscila entre 12 y 18 km / s, lo que lo convierte en el cuerpo celeste con la órbita más corta y la velocidad más rápida en el sistema solar</p>
+            <hr>
+            <div>
+                <p> La órbita inclinada, baja y excéntrica de Moho y la falta de atmósfera o lunas hacen que el encuentro con el planeta sea relativamente difícil</p>
+            </div>
+            <hr>
+            <div>
+                <p>Sin una atmósfera para retener o bloquear el calor, las temperaturas de la superficie diurna de Moho pueden superar los 300 ° C, lo que hace que los radiadores sean una necesidad absoluta</p>
+            </div>
+            <div class="button-container">
+                <button id="backButton-2" class="toggleButton custom-button">Anterior</button>
+                <button id="nextButton-2" class="toggleButton custom-button">Siguiente</button>
+            </div>   
+        </div>
+    </div>
+<!-- Sección 3 -->
+<div class="cuadro cuadro-3 hidden" id="eva">
+    <div class="slot">
+        <img src="{{url_for('static', filename='SRC/Eva.png')}}">
+        <p>Eva es el segundo planeta de Kerbol, el planeta más cercano a Kerbin</p>
+    </div>
+    <div class="datos">
+        <!-- Contenido de datos aquí -->
+        <p>Es especialmente notable por su atmósfera extremadamente espesa y densa, que hace que el aerofrenado y el retorno sean dos de las actividades más peligrosas</p>
+        <hr>
+        <div>
+            <p>Eve tiene la mayor gravedad superficial de todos los planetas, y la segunda velocidad de escape más alta, solo superada por Jool</p>
+        </div>
+        <hr>
+        <div>
+            <p>Debido a la alta presión atmosférica de Eve, los motores de cohetes funcionan mal a bajas altitudes.</p>
+        </div>
+        <div class="button-container">
+            <button id="backButton-3" class="toggleButton custom-button">Anterior</button>
+            <button id="nextButton-3" class="toggleButton custom-button">Siguiente</button>
+        </div>   
+    </div>
+</div>
+<!-- Sección 4 -->
+<div class="cuadro cuadro-4 hidden" id="kerbin">
+    <div class="slot">
+        <img src="{{url_for('static', filename='SRC/Kerbin.png')}}">
+        <p>Kerbin es el planeta natal de los Kerbals, la ubicación del Centro Espacial y otras instalaciones, y el foco principal del Programa Espacial Kerbal</p>
+    </div>
+    <div class="datos">
+        <!-- Contenido de datos aquí -->
+        <p>Kerbin es el tercer planeta en órbita alrededor de la estrella Kerbol</p>
+        <hr>
+        <div>
+            <p>Es el tercer cuerpo celeste más grande que orbita Kerbol, después de Jool y Eve</p>
+        </div>
+        <hr>
+        <div>
+            <p>La atmósfera de Kerbin se puede dividir en tres capas principales, comparables a la troposfera, la estratosfera y la mesosfera de la Tierra</p>
+        </div>
+        <div class="button-container">
+            <button id="backButton-4" class="toggleButton custom-button">Anterior</button>
+            <button id="nextButton-4" class="toggleButton custom-button">Siguiente</button>
+        </div>   
+    </div>
+</div>
+
+<!-- Sección 5 -->
+<div class="cuadro cuadro-5 hidden" id="duna">
+    <div class="slot">
+        <img src="{{url_for('static', filename='SRC/Duna.png')}}">
+        <p>Duna es el cuarto planeta de Kerbol y el cuarto planeta más grande</p>
+    </div>
+    <div class="datos">
+        <!-- Contenido de datos aquí -->
+        <p>Duna es un planeta terrestre con una superficie de color marrón rojizo y casquetes polares similares a la de Kerbin</p>
+        <hr>
+        <div>
+            <p>La órbita de Duna tiene casi la misma inclinación que Kerbin alrededor de Kerbol, lo que hace que el planeta sea uno de los más fáciles de encontrar</p>
+        </div>
+        <hr>
+        <div>
+            <p>La superficie de Duna es fría, con una temperatura de nivel de referencia promedio global de aproximadamente -50 ° C</p>
+        </div>
+        <div class="button-container">
+            <button id="backButton-5" class="toggleButton custom-button">Anterior</button>
+            <button id="nextButton-5" class="toggleButton custom-button">Siguiente</button>
+        </div>   
+    </div>
+</div>
+
+<!-- Sección 6 -->
+<div class="cuadro cuadro-6 hidden" id="tinydres">
+    <div class="slot">
+        <img src="{{url_for('static', filename='SRC/TinyDres.png')}}">
+        <p>Dres es el quinto planeta del Sistema Kerbol. Se encuentra entre Duna y Jool en una órbita algo excéntrica e inclinada</p>
+    </div>
+    <div class="datos">
+        <!-- Contenido de datos aquí -->
+        <p>Es similar a Moho y Eeloo en que no tiene atmósfera ni satélites naturales </p>
+        <hr>
+        <div>
+            <p>Dres tiene la menor gravedad de cualquier planeta en el sistema Kerbol</p>
+        </div>
+        <hr>
+        <div>
+            <p>Dres es considerado un planeta enano porque no ha "despejado su vecindario"; En otras palabras, tiene asteroides muy cerca</p>
+        </div>
+        <div class="button-container">
+            <button id="backButton-6" class="toggleButton custom-button">Anterior</button>
+            <button id="nextButton-6" class="toggleButton custom-button">Siguiente</button>
+        </div>   
+    </div>
+</div>
+
+<!-- Sección 7 -->
+<div class="cuadro cuadro-7 hidden" id="jool">
+    <div class="slot">
+        <img src="{{url_for('static', filename='SRC/Jool.png')}}">
+        <p>Jool es un gigante gaseoso y el sexto planeta que orbita Kerbol</p>
+    </div>
+    <div class="datos">
+        <!-- Contenido de datos aquí -->
+        <p>Jool tiene el diámetro más grande y la mayor masa de todos los cuerpos celestes en el Sistema Kerbol</p>
+        <hr>
+        <div>
+            <p>Su gravedad extremadamente alta hace que las maniobras orbitales sean desagradablemente caras</p>
+        </div>
+        <hr>
+        <div>
+            <p>Si bien su distancia de Kerbin hace que sea difícil de alcanzar, es uno de los objetivos más atractivos para las misiones debido a su gran y complejo sistema de cinco lunas</p>
+        </div>
+        <div class="button-container">
+            <button id="backButton-7" class="toggleButton custom-button">Anterior</button>
+            <button id="nextButton-7" class="toggleButton custom-button">Siguiente</button>
+        </div>   
+    </div>
+</div>
+
+<!-- Sección 8 -->
+<div class="cuadro cuadro-8 hidden" id="eeloo">
+    <div class="slot">
+        <img src="{{url_for('static', filename='SRC/Eeloo.png')}}">
+        <p>Eeloo es un planeta enano.Es el séptimo y más lejano planeta de Kerbol</p>
+    </div>
+    <div class="datos">
+        <!-- Contenido de datos aquí -->
+        <p>Eeloo tiene solo un 3,5% más de gravedad que Mun y es muy similar en tamaño</p>
+        <hr>
+        <div>
+            <p>Su gravedad extremadamente alta hace que las maniobras orbitales sean desagradablemente caras</p>
+        </div>
+        <hr>
+        <div>
+            <p>La distancia relativamente grande de Eeloo de Kerbol reduce la energía solar a aproximadamente el 4% en la periapsis de Eeloo y al 1,4% en la apoapsis de Eeloo de los valores observados en Kerbin. Se recomienda traer paneles adicionales o una fuente de alimentación alternativa </p>
+        </div>
+        <div class="button-container">
+            <button id="backButton-8" class="toggleButton custom-button">Anterior</button>
+            <button id="nextButton-8" class="toggleButton custom-button">Siguiente</button>
+        </div>   
+    </div>
+</div>
+    <!-- Repite esta estructura para las secciones 3 a 8 -->
+</section>
+
+<script src="{{url_for('static', filename='JS/app.js')}}"></script>
+{% endblock %}
+
+
