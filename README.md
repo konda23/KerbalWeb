@@ -6,6 +6,10 @@
 
 ![image](https://github.com/konda23/KerbalWeb/assets/141423621/2c93ded0-14d7-49ca-bbda-661161ee7a6a)
 
+# ¿Qué se logro?
+
+- A traves de la construccion y customizacion de la pagina fue posible aprender distintos parametros y opciones de personalizacion los cuales hicieron posible tranformar una buena cantidad de texto a lo que ahora podemos visualizar en ella.
+
 # Funcionalidad
 
 - La página fue diseñada aplicando distintos lenguajes de programación como pueden ser "HTML" para la estructura base de la página web, "Flask" para el renderizado de la página, con "CSS" pude personalizar y estilizar mi página y también utilicé "JavaScript" para crear el contenido interactivo que contiene la página web.
